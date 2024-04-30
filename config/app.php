@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://diario-el-faro-production-f959.up.railway.app/'),
 
     /*
     |--------------------------------------------------------------------------
