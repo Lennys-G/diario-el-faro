@@ -2,7 +2,11 @@
 
 use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\loginController;
+use App\Http\Controllers\UserController;
 
-Route::resource('articles', ArticleController::class);
-Route::resource('login', loginController::class);
+
+Route::resource('/', ArticleController::class);
+
+Route::get('/login', [UserController::class, 'index']);
+Route::get('/register', [UserController::class, 'create']);
+Route::get('/register/store', [UserController::class, 'store']);

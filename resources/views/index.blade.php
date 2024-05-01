@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <!-- Hoja de estilos css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <title>Diario El Faro</title>
 </head>
 
@@ -80,7 +80,7 @@
                                     </div>
                                     <div class="modal-body">
                                         <!-- Formulario -->
-                                        <form action="/articles/store" method="POST" name="formCreateArticle" method="get" id="formCreateArticle" class="bg-light p-4 formContact">
+                                        <form action="/articles/store" name="formCreateArticle" method="get" id="formCreateArticle" class="bg-light p-4 formContact">
                                             @csrf
                                             <div class="form-row row">
 
@@ -123,9 +123,9 @@
 
 
                         <!-- Button trigger modal crear nuevo artículo- -->
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCreateAccount" aria-label="Open Account Menu">
-                            Registrar usuario
-                        </button>
+                        <a href="/login" type="button" class="btn btn-dark">
+                            Iniciar sesión
+                        </a>
                         <!-- Modal crear nuevo artículo-->
                         <div class="modal fade" id="modalCreateAccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -404,7 +404,7 @@
     </footer>
 </body>
 
-<script src="{{ url('js/index.js') }}" defer></script>
+<script src="{{ asset('js/index.js') }}" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 

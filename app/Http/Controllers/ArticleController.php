@@ -39,7 +39,8 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
-        $articles = new Article;
+
+        /*      $articles = new Article;
 
         // $articles->fill($request->only(['title-formCreateArticle', 'url-formCreateArticle', 'urlToImage-formCreateArticle', 'category-formCreateArticle']));
         $articles->title  = $request->get('title-formCreateArticle');
@@ -49,8 +50,10 @@ class ArticleController extends Controller
 
         $articles->save();
 
-        return redirect('./articles');
+        return redirect('./articles'); */
     }
+
+
 
     /**
      * Display the specified resource.
